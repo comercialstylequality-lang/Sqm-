@@ -17,3 +17,9 @@ O servidor valida a credencial recebida do Google, confere o `aud`, o e-mail ver
 ## Dados
 
 O Admin e a Loja devem usar as mesmas variáveis do Upstash Redis para compartilhar produtos, pedidos e conteúdo.
+
+
+## Correção de compatibilidade Vercel
+As Functions da pasta `api/` usam agora entradas `.mjs` com `export default`, mantendo as bibliotecas legadas em CommonJS. Isso evita o problema de roteamento/empacotamento que estava causando `404: NOT_FOUND`.
+
+Teste após o deploy: `/api/health` deve retornar JSON com `success: true`.

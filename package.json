@@ -1,7 +1,13 @@
 {
-  "name":"sqm-admin-panel",
-  "version":"1.0.0",
-  "private":true,
-  "engines":{"node":">=22"},
-  "dependencies":{"@vercel/blob":"^2.6.1","formidable":"^3.5.4"}
+  "name": "sqm-admin-panel",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.6.1",
+    "formidable": "^3.5.4"
+  },
+  "description": "SQM Admin Panel — Vercel Serverless"
 }
